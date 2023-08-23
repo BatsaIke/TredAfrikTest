@@ -22,7 +22,7 @@ export const submitPhototo = async (
     '/file',
     payload,
     {
-      'Content-Type': contentType, // Include the specified content type header
+      'Content-Type': contentType, 
     }
   );
   return response;

@@ -21,8 +21,6 @@ const Gratitude = () => {
     setIsCreatePostVisible(true);
   };
 
-  
-
   return (
     <div>
       <Sidebar ownerInfo={ownerInfo} friendsCount={friendsCount} messagesCount={messagesCount} />
@@ -30,11 +28,10 @@ const Gratitude = () => {
       {/* Always render the PostInput */}
       <PostInput userAvatar="URL_OF_LOGGED_IN_USER_AVATAR" onPostInputClick={handlePostInputClick} />
 
-      {/* Render the CreatePost component if it's visible */}
-    <CreatePost  />
+       <CreatePost />
 
-      {/* Render the Feed component */}
-      <Feed feedData={feedData} />
+      {/* Render the Feed component if feedData is available, else render LoadingIndicator */}
+      {feedData ? <Feed feedData={feedData} /> : <h3>loading...</h3>}
     </div>
   );
 };
