@@ -12,12 +12,12 @@
   min-width: 40%;
 }
 
-/* Add white-space property to display each div element on a new line */
+
 .feed-item .user-details div {
   white-space: pre-line;
 }
 .biography {
-  /* ... (other styles) */
+
   position: relative;
 }
 
@@ -27,14 +27,14 @@ p {
   font-size: 15px;
   padding: 15px;
 }
-/* CreatePost.css */
+
 
 .create-post-container {
   background-color: transparent;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(11, 8, 8, 0.1);
-  margin: 70px auto; /* Added margin and set horizontal auto for centering */
+  margin: 70px auto; 
   width: 40%;
 }
 
@@ -55,8 +55,8 @@ p {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 100%; /* Set the width to fill the container */
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 .user-info {
@@ -72,8 +72,8 @@ p {
 }
 
 .full-name {
-  font-weight: bold; /* Make the text bold */
-  /* Add the following line to ensure proper display */
+  font-weight: bold; 
+ 
   white-space: pre-line;
 }
 
@@ -89,9 +89,9 @@ p {
 }
 
 .post-image {
-  width: 100%; /* Set the width to fill the container */
-  height: 300px; /* Set a fixed height for consistent dimensions */
-  object-fit: cover; /* Maintain aspect ratio and cover container */
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover; 
 }
 
 .interactions {
@@ -143,7 +143,7 @@ p {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 43%; /* Adjust the width as needed */
+  width: 43%; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 

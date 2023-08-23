@@ -1,9 +1,11 @@
+
+
 import makeApiRequest from '../utils/utils';
-import { ApiResponse, UserProps, userToken,PhotoUploadResult,PhotoFeedPost, FeedPost,FormData } from '../utils/Types';
+import { ApiResponse, UserProps, userToken,PhotoUploadResult,PhotoFeedPost, FeedPost } from '../utils/Types';
 
 
 
-
+//here api calls are displayed
 
 export const loginUser = async (userData: UserProps): Promise<userToken> => {
   return makeApiRequest<userToken>('post', '/user/login', userData);
@@ -29,11 +31,9 @@ export const submitPhototo = async (
 };
 
 
-// export const submitPhototoServer = async (payload:PhotoFeedPost|FeedPost): Promise<PhotoFeedPost|FeedPost> => {
-//   return makeApiRequest<PhotoFeedPost>('post', '/feed',payload);
-// };
+
 
 export const submitPosto = async (payload: FeedPost | PhotoFeedPost): Promise<ApiResponse | null> => {
-  const response = await makeApiRequest<ApiResponse>('POST', '/feed', payload); // Adjust the endpoint
+  const response = await makeApiRequest<ApiResponse>('POST', '/feed', payload); 
   return response;
 };

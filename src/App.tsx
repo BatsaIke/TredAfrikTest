@@ -7,7 +7,7 @@ import Gratitude from './components/pages/Gratitude';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const navigate = useNavigate(); // Hook to programmatically navigate
+  const navigate = useNavigate(); 
 
   // Function to handle logout
   const handleLogout = () => {

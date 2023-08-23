@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchFeedDataAsync, selectFeedData, updateFeedData  } from '../redux/quiz/quizSlice';
 
-import { useNavigate } from "react-router";
+
 import { PhotoUploadResult } from "../utils/Types";
 import {
   FeedPost,
   PhotoFeedPost,
   ProjectTextAreaPros,
-  formatBiography,
+  formatBiography, 
 } from "../utils/Types";
 import "./CreatePost.css";
 
@@ -42,7 +42,7 @@ const CreatePost = () => {
 
     const dispatch = useDispatch();
     const feedData = useSelector(selectFeedData);
-  const navigate = useNavigate();
+  
    const  [formData, setFormData] = useState<FormData1>({
     post_type: "activity_post",
     tagged_friends: [null],
@@ -57,11 +57,10 @@ const CreatePost = () => {
     privacy: 4,
   });
 
-  const [showPhotoPreviewer, setShowPhotoPreviewer] = useState<boolean>(false);
+  
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [alert, setAlert] = useState<{ message: string; type: string } | null>(
-    null
-  ); // State for displaying alerts
+   
+
 
   useEffect(() => {
     dispatch(fetchFeedDataAsync());
@@ -159,11 +158,6 @@ const CreatePost = () => {
     try {
       const photoResult = await submitPhoto();
       const payload: FeedPost | PhotoFeedPost = getPayload(photoResult);
-      const response = await submitPost(payload);
-      setAlert({
-        message: "Post created successfully",
-        type: "success",
-      });
   
       if (payload.post_type === "photo_set") {
         (payload as PhotoFeedPost).photo_files[0].text = photoResult?.url || "";

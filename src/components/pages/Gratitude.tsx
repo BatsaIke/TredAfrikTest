@@ -1,4 +1,4 @@
-
+import React from 'react';
 import Sidebar from '../pages/Sideba';
 import PostInput from './PostInput';
 import Feed from './Feed';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ApiResponse } from '../utils/Types';
 import './Feed.css';
 
@@ -8,8 +8,7 @@ interface FeedProps {
 
 const Feed: React.FC<FeedProps> = ({ feedData }) => {
   console.log(feedData);
-  const [expandedIds, setExpandedIds] = useState<number[]>([]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   if (!feedData || !feedData.data || !feedData.data) {
     return <div>No data to display</div>;
@@ -17,9 +16,7 @@ const Feed: React.FC<FeedProps> = ({ feedData }) => {
 
   const data = feedData.data;
 
-  const handleReadMore = (id: number) => {
-    setExpandedIds((prevIds) => [...prevIds, id]);
-  };
+ 
 
   function extractPlainTextFromHTML(htmlString) {
     const temporaryElement = document.createElement('div');

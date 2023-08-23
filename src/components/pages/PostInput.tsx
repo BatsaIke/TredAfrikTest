@@ -1,7 +1,5 @@
 import React from 'react';
 import './PostInput.css';
-import { useSelector } from 'react-redux';
-import { selectFeedData } from '../redux/quiz/quizSlice';
 
 interface PostInputProps {
   userAvatar: string;
@@ -14,7 +12,7 @@ const PostInput: React.FC<PostInputProps> = ({ userAvatar, onPostInputClick }) =
   const handleTextAreaClick = () => {
     onPostInputClick(); // Call the callback to show the CreatePost component
   };
-
+ 
   return (
     <div className="post-input-container">
       <div className="input-show">
