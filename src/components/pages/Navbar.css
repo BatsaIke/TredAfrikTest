@@ -1,0 +1,60 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333;
+    padding: 5px 0;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    z-index: 100; /* Set a higher z-index value */
+  }
+  .navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    padding: 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Set z-index value lower than sidebar */
+  }
+  
+  
+  
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+  }
+  
+  nav li {
+    padding: 5px 8px; /* Reduce the padding to make the items closer */
+  }
+  
+  nav li a {
+    font-weight: bold; /* Make the link text bolder */
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Reduce the font size for the navigation links */
+  }
+  
+  nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  nav button {
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    padding: 5px 8px; /* Reduce the padding to make the button smaller */
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #c0392b;
+  }
+  

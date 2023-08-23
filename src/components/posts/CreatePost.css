@@ -1,0 +1,61 @@
+/* CreatePost.css */
+
+.container {
+    background-color: transparent; /* Set the background color to transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin at the top */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-select,
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    resize: vertical;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.col {
+    flex: 1;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 15px; /* Add margin at the top */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
