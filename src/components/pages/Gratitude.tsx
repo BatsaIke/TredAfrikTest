@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import Sidebar from '../pages/Sideba';
 import PostInput from './PostInput';
 import Feed from './Feed';
@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { selectFeedData } from '../redux/quiz/quizSlice';
 
 const Gratitude = () => {
-  const [isCreatePostVisible, setIsCreatePostVisible] = useState(false);
+  
   const feedData = useSelector(selectFeedData);
   const ownerInfo = {
     fullName: 'John Doe',
@@ -18,7 +18,7 @@ const Gratitude = () => {
   const messagesCount = 45;
 
   const handlePostInputClick = () => {
-    setIsCreatePostVisible(true);
+  
   };
 
   return (
