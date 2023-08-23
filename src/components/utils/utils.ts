@@ -20,7 +20,7 @@ const makeApiRequest = async <T>(
       headers: {
         Authorization: `Bearer ${accessToken}`,
         'Content-Type': 'application/json',
-        ...headers, // Spread additional headers
+        ...headers, 
       },
     });
     return response.data;

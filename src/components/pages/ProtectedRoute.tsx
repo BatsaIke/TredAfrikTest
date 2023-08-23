@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 
 interface ProtectedRouteProps {
   isLoggedIn: boolean;
-  component: React.ComponentType; // Use React.ComponentType here
+  component: React.ComponentType; 
 }
 
 const ProtectedRouted: React.FC<ProtectedRouteProps> = ({ isLoggedIn, component: Component }) => {

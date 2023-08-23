@@ -10,7 +10,7 @@ const PostInput: React.FC<PostInputProps> = ({ userAvatar, onPostInputClick }) =
     
 
   const handleTextAreaClick = () => {
-    onPostInputClick(); // Call the callback to show the CreatePost component
+    onPostInputClick(); 
   };
  
   return (

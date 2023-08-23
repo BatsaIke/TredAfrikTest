@@ -3,9 +3,9 @@
 .navbar {
     background-color: #333;
     padding: 5px 0;
-    display: flex; /* Use flexbox to align items horizontally */
-    justify-content: center; /* Center the items horizontally */
-    z-index: 100; /* Set a higher z-index value */
+    display: flex; 
+    justify-content: center; 
+    z-index: 100; 
   }
   .navbar {
     background-color: #333;
@@ -16,7 +16,7 @@
    
     padding: 0px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1; /* Set z-index value lower than sidebar */
+    z-index: 1; 
   }
   
   
@@ -26,20 +26,20 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox to align items horizontally */
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   
   nav li {
-    padding: 5px 8px; /* Reduce the padding to make the items closer */
+    padding: 5px 8px; 
   }
   
   nav li a {
-    font-weight: bold; /* Make the link text bolder */
+    font-weight: bold; 
     color: #fff;
     text-decoration: none;
-    font-size: 16px; /* Reduce the font size for the navigation links */
+    font-size: 16px; 
   }
   
   nav li a:hover {
@@ -50,7 +50,7 @@
     color: #fff;
     background-color: #e74c3c;
     border: none;
-    padding: 5px 8px; /* Reduce the padding to make the button smaller */
+    padding: 5px 8px; 
     cursor: pointer;
   }
   
